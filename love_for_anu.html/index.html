@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Love My Anu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 50px;
+            color: #fff;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .reason {
+            font-size: 24px;
+            margin-top: 20px;
+            display: none;
+            font-weight: bold;
+        }
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #c70039;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I Love You, Anu! ❤️</h1>
+        <div class="heart">❤️❤️❤️</div>
+        <p class="reason" id="reason"></p>
+        <button onclick="showReason()">Why?</button>
+    </div>
+    
+    <script>
+        const reasons = [
+            "You are my happiness! 😊",
+            "You make me feel special every day! 😊",
+            "Your smile brightens my darkest days! 😊",
+            "I love the way you care for me! 😊",
+            "You are the best thing that ever happened to me! 😊",
+            "With you, I feel complete! 😊",
+            "Kasam, I'm always going to be with you and always love you! 😊",
+            "Kasam, I know you're trying your best and I can see your efforts. I'm proud of you, my angel! 😊",
+            "You are my safe place. 😊",
+            "You make every moment special. 😊",
+            "Your laugh is my favorite sound. 😊",
+            "You always know how to cheer me up. 😊",
+            "I love the way you listen to me. 😊",
+            "You are the kindest person I know. 😊",
+            "You inspire me to be better. 😊",
+            "Every day with you is a blessing. 😊",
+            "Your love makes me stronger. 😊",
+            "I adore the way you look at me. 😊",
+            "You make life so much more beautiful. 😊",
+            "I can't imagine my life without you. 😊",
+            "You understand me like no one else. 😊",
+            "I love your sense of humor. 😊",
+            "You're my biggest supporter. 😊",
+            "You always believe in me. 😊",
+            "Your hugs make everything better. 😊",
+            "You bring out the best in me. 😊",
+            "You make my heart race. 😊",
+            "You are my dream come true. 😊",
+            "Your voice is my favorite melody. 😊",
+            "You are my sunshine on a cloudy day. 😊",
+            "I love how we can be silly together. 😊",
+            "You are the love of my life. 😊",
+            "Your kindness is unmatched. 😊",
+            "You make even the smallest moments feel magical. 😊",
+            "You are my everything. 😊",
+            "You are perfect to me. 😊",
+            "You make my heart smile. 😊",
+            "Every second with you is precious. 😊",
+            "You complete me. 😊",
+            "I feel lucky to have you. 😊",
+            "You are my best friend and my love. 😊",
+            "You make my life brighter. 😊",
+            "You are my forever. 😊"
+        ];
+
+        function showReason() {
+            const reasonText = document.getElementById("reason");
+            const randomReason = reasons[Math.floor(Math.random() * reasons.length)];
+            reasonText.innerText = randomReason;
+            reasonText.style.display = "block";
+        }
+    </script>
+</body>
+</html>
